@@ -1,0 +1,101 @@
+1. What is the new feature of  java8
+    - Functional interface
+    - Stream API
+    - Local date & time
+    - String Joiner
+    - Method reference
+    - Special iterator
+    - Optional
+    - Static & default method
+    - Lambda expression
+
+2. What is the advantage of java8
+    - More readable anc consise code
+    - parallel streaming
+    - Functional programming
+
+ 3 What is meta space
+    - Earlier JVm used to store heap space to store the object now meta space store the class in java8
+    - PermGen is fixed but metaspace can resize dynamically
+
+ 4 What is SAM in java8
+    - SAM stands for single abstract method
+    - SAM interface is called Functional interface
+    - The interface which contains only one abstract method is called FI
+    - To represent FI we use @FunctionalInterface
+
+  5. Can FI extend and inherit another interface
+     A Functional interface can extends anther interface if it doesn't contains abstract method . bcz it violates functional interface rule.
+
+  6. What is Default interface
+
+     The method which contains body and and used default keyword
+
+  7. What is static method
+       - The method contains body with static keyword is called static method
+       - Static method is introduced in java 1.8
+       - Static method cant override
+
+  8. What are pre defined FI
+        - Runnable
+        - callable
+        - comparator
+        - comparable
+        - consumer
+        - predict
+        - supplier
+
+  9. what is lambda expression
+
+        - Lambda expression with out name , modifier & return type
+        - Lambda expressions are used to write functional programming
+        - FI are used to invoke lambda expressions
+
+   10. What is lambda expression give an example
+        - (x) -> System.out.println(x)
+
+   11. What is method reference
+        - It is alternate for lambda expression
+        - (x) -> System.out.println(x)
+        - (x) -> System.out::println
+
+   12. What is optional class in java 8
+        - it usd to check  the null pointer expression
+        - Optional class is container it is the part of util class
+        - it contains isPresent() method to check is null is present
+        - to get value from optional objet use get()
+
+   13.  What is stream API
+        - Its introduced java 1.8
+        - it is represent sequence of object
+        - Stream is used for only process the data its not datastructures
+
+   14.  What is the main component of the stream
+        - source(it can be collection / array)
+        - MAp(function)
+        - filter (predicate)
+        - sorted(Comparator)
+
+   15.  What is intermediate & terminal operation in stream 17:00
+        - intermediate operations always return new stream
+            > ex Filter & Map
+        - Terminal operations will return result
+            > Count()
+
+   16. What is difference and collection and stream
+        - Collection are used to store the data its a datastructures
+        - Stream is used to process the data
+
+   17. What is data & time Java8
+       - Java8 introduced new class
+            LocalDate()
+            LocalTime()
+            LocalDateTime()
+
+
+
+
+
+
+
+
