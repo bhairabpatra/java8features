@@ -37,7 +37,6 @@ public class CursorDemo {
 
         while (listIterator.hasPrevious()) {
             System.out.println(listIterator.previous());
-            System.out.println(listIterator.previousIndex());
         }
     }
 
@@ -50,6 +49,7 @@ public class CursorDemo {
         names.add("Koko");
 
         System.out.println("name list " + names.size());
+
         Enumeration<String> elements = names.elements();
         while (elements.hasMoreElements()) {
             System.out.println(elements.nextElement());
@@ -58,30 +58,43 @@ public class CursorDemo {
     }
 
     public void ForEachExample() {
-        Vector<String> names = new Vector<>();
-        names.add("Galu");
-        names.add("Shree");
-        names.add("Gugi");
-        names.add("Koko");
+        List<String> names = new ArrayList<>();
+        names.add("Zak Crawley");
+        names.add("Ollie Pope");
+        names.add("Foakes ");
+        names.add("Hartleyb ");
+        names.add("Mark Wood");
+        names.add("Jack Leach");
 
-        System.out.println("name list " + names.size());
+        System.out.println("size of the list " + names.size());
+
+        System.out.println("************* for ***********");
+
         for(String name: names){
             System.out.println(name);
         }
 
+        System.out.println("************foreach stream api java 8***************");
+        //foreach stream api java 8
+        names.forEach(System.out::println);
+
+        System.out.println("**********************************************");
+
         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("bhairab");
-        arrayList.add("priyanka");
-        arrayList.add("Santosha");
-        List<String> list =  arrayList.stream().filter(x-> x.endsWith("a")).map(String::toUpperCase).toList();
+        arrayList.add("Crawley");
+        arrayList.add("Leach");
+        arrayList.add("Hartley");
+        arrayList.add("Wood");
+        arrayList.add("Foakes");
+        List<String> list =  arrayList.stream().filter(x-> x.endsWith("y")).map(String::toUpperCase).toList();
         System.out.println("List" + list);
     }
 
     public static void main(String[] args) {
         CursorDemo cursorDemo = new CursorDemo();
-        cursorDemo.cursorTestIterator();
-        //cursorDemo.ListIteratorExample();
-        //cursorDemo.EnumerationExample();
+//        cursorDemo.cursorTestIterator();
+//        cursorDemo.ListIteratorExample();
+       // cursorDemo.EnumerationExample();
         cursorDemo.ForEachExample();
     }
 }
