@@ -15,6 +15,7 @@ public class DateAndTime {
 
         Date date = new Date();
         System.out.println(date);
+
         LocalDate localDate = LocalDate.now();
         System.out.println(localDate);
 
