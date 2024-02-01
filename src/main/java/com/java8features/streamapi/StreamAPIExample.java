@@ -45,7 +45,7 @@ public class StreamAPIExample {
 
         List<Integer> rollNumber = Arrays.asList(23, 56, 89, 123, 567, 9, 12, 1, 5, 8);
         Collections.sort(rollNumber);
-        List<Integer> even = rollNumber.stream().filter(num -> num % 2 == 0).map(x -> x*2).toList();
+        List<Integer> even = rollNumber.stream().filter(num -> num % 2 == 0).map(x -> x * 2).toList();
         System.out.println(even);
 
     }
